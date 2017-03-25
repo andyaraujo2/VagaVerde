@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Administrador</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Temas CSS -->
+    <link href="css/vagaverde.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+    <!-- Fontes customizadas -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Vaga Verde</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll" data-toggle="modal" data-target="#myModal"><a>Sair</a>
+                    </li>
+              </ul>
+          </div><!-- collapse navbar-collapse -->
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-0 text-center">
+
+              <div class="col-lg-9">
+
+              <div class="col-lg-9">
+              <img class="img-responsive" src="img/fotos/estacionamento.jpg" alt="">
+              </div>
+              <div class="col-lg-3">
+              <div class="intro-text">
+                        <h3>Vagas Livres:</h3>
+                        <!--<hr class="star-light"> <!--LINHA COM ESTRELA-->
+                        <!--<hr class="type_5"> MODELO DA INTERNET-->
+                        <h3>Vagas Ocupadas:</h3>
+                        
+                    </div>
+              </div>
+              </div><!--fim coluna 9-->
+
+               <div class="col-lg-1">
+               </div>
+
+              <div class="col-lg-2">
+
+              <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+
+              <a href="#" class="btn btn-primary btn-volume btn-responsive btn-lg" data-toggle="modal" data-target="#myModalEntrada">
+                  <i class="fa fa-car" aria-hidden="true"></i> <!--Ícone-->
+                   Entrada de Veículo
+                </a>
+
+              </div>
+              </div>
+              <br>
+              <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+
+              <a href="#" class="btn btn-primary btn-volume btn-lg" data-toggle="modal" data-target="#myModal2">
+                  <i class="fa fa-car" aria-hidden="true"></i> <!--Ícone-->
+                   Saída de Veículo
+                </a>
+              
+              </div>
+              </div>
+              <br>
+              <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+
+              <a href="#" class="btn btn-primary btn-volume btn-lg" data-toggle="modal" data-target="#myModalRelatorio">
+                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> <!--class="btn btn-lg btn-outline"-->
+                        Relatórios
+                </a>
+              
+              </div>
+              </div>
+            </div><!--fim coluna 3-->
+
+              </div>
+              </div>
+              </div><!--container-->
+    </header>
+
+    
+    
+    <footer class="text-center">
+    <nav class="navbar-fixed-botton">
+           
+        <div class="footer-below">
+          <div class="container">
+              
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Vaga Verde 2017
+                    </div>
+                </div>
+             
+            </div>          
+        </div>
+       </nav>
+    </footer>
+     
+
+<!-- modal botoes -->
+
+<!-- modal1 -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Cadastro de funcionário</h4>
+            </div>
+
+    <div class="modal-body"><!-- os codigos dos formularios são depois do modal-body-->
+
+    <section id="cadastro">
+        <div class="modal-dialog modal-md">
+          <div class="row">
+
+            <div class="col-xs-9">
+              <div class="form-group">
+                  <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="on">
+                  <h5>Nome completo</h5>
+                   <div class="form-group">
+                        <label for="nome" class="sr-only">Nome completo</label>
+                        <input type="nome" name="nome" id="email" class="form-control" placeholder="Digite o nome completo">
+                    </div>
+                    <h5>CPF</h5>
+                     <div class="form-group">
+                        <label for="cpf" class="sr-only">CPF</label>
+                        <input type="cpf" name="cpf" id="email" class="form-control" placeholder="XXX.XXX.XXX-XX">
+                    </div>
+                    <h5>Email</h5>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="alguem@exemplo.com">
+                    </div>
+                    <h5>Senha</h5>
+                  <div class="form-group">
+                      <label for="key" class="sr-only">Senha</label>
+                      <input type="password" name="key" id="key" class="form-control" placeholder="Senha">
+                  </div>
+                  <h5>Confirmar senha</h5>
+                  <div class="form-group">
+                      <label for="key" class="sr-only">Confirmar senha</label>
+                      <input type="password" name="key" id="key" class="form-control" placeholder="Confirmar senha">
+                  </div>
+                  <div class="checkbox">
+                      <span class="character-checkbox" onclick="showPassword()"></span>
+                      <span class="label">Mostrar Senha</span>
+                  </div>
+                  <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Salvar">
+                </form>
+              <hr> <!-- Linha como quebra de paragrafo -->
+            </div>
+          </div> <!-- /.col-xs-12 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </section>
+
+    </div><!-- Fim Modal-body -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+<!-- modalEntrada -->
+    <div class="modal fade" id="myModalEntrada" role="dialog">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Entrada de veículo</h4>
+            </div>
+
+    <div class="modal-body">
+          <section id="cadastro">
+        <div class="modal-dialog modal-md">
+          <div class="row">
+
+            <div class="col-xs-9">
+
+              <div class="form-group">
+                  <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="on">
+
+                  <h5>Placa</h5>
+                  
+                   <div class="form-group">
+                        <label for="placa" class="sr-only">Placa</label>
+                        <input type="placa" name="placa" id="email" class="form-control" placeholder="Digite a placa do veículo">
+                    </div>
+                    
+                    <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Gerar Entrada">
+
+                </form>
+              <hr> <!-- Linha como quebra de paragrafo -->
+            </div>
+          </div> <!-- /.col-xs-12 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </section>
+    
+
+    </div><!-- Fim Modal-body -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+<!-- modal3 -->
+    <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Saída de veículo</h4>
+            </div>
+
+       <div class="modal-body">
+          <section id="cadastro">
+        <div class="modal-dialog modal-md">
+          <div class="row">
+
+            <div class="col-xs-9">
+              <div class="form-group">
+                  <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="on">
+                  <h5>Placa</h5>
+                   <div class="form-group">
+                        <label for="placa" class="sr-only">Placa</label>
+                        <input type="placa" name="placa" id="email" class="form-control" placeholder="Digite a placa do veículo">
+                    </div>
+                    <h5>Modelo</h5>
+                    <div class="form-group">
+                        <label for="modelo" class="sr-only">Modelo</label>
+                        <input type="modelo" name="modelo" id="modelo" class="form-control" placeholder="Digite a cor do veículo">
+                    </div>
+                    <h5>Cor</h5>
+                    <div class="form-group">
+                        <label for="cor" class="sr-only">Cor</label>
+                        <input type="cor" name="nome" id="cor" class="form-control" placeholder="Digite a cor do veículo">
+                    </div>
+                    <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Salvar">
+
+                </form>
+              <hr> <!-- Linha como quebra de paragrafo -->
+            </div>
+          </div> <!-- /.col-xs-12 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </section>
+    </div><!-- Fim Modal-body -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+<!-- modal4 -->
+    <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Caixa</h4>
+            </div>
+
+    <div class="modal-body">
+
+    </div><!-- Fim Modal-body -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- modal5 -->
+      <div class="modal fade" id="myModal5" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Funcionários</h4>
+              </div>
+
+      <div class="modal-body">
+
+      </div><!-- Fim Modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <!-- modalRelatorio -->
+      <div class="modal fade" id="myModalRelatorio" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Relatório mensal</h4>
+              </div>
+
+      <div class="modal-body">
+
+      </div><!-- Fim Modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <!-- modal7 -->
+      <div class="modal fade" id="myModal7" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Vagas</h4>
+              </div>
+
+      <div class="modal-body">
+
+      </div><!-- Fim Modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <!-- modal8 -->
+      <div class="modal fade" id="myModal8" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login</h4>
+              </div>
+
+      <div class="modal-body">
+
+      </div><!-- Fim Modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- modal9 -->
+        <div class="modal fade" id="myModal9" role="dialog">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
+
+        <div class="modal-body">
+
+        </div><!-- Fim Modal-body -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+      </div>
+
+    <!-- modal10 -->
+        <div class="modal fade" id="myModal10" role="dialog">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
+
+        <div class="modal-body">
+
+        </div><!-- Fim Modal-body -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+      </div>
+
+    <!-- modal11 -->
+        <div class="modal fade" id="myModal11" role="dialog">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
+
+        <div class="modal-body">
+
+        </div><!-- Fim Modal-body -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+      </div>
+
+    <!-- modal12 -->
+        <div class="modal fade" id="myModal12" role="dialog">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
+
+        <div class="modal-body">
+
+        </div><!-- Fim Modal-body -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      </div>
+      </div>
+
+<!-- modal1 -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Login</h4>
+            </div>
+
+    <div class="modal-body">
+
+    </div><!-- Fim Modal-body -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+  </div><!-- Fim Modal -->
+
+  <!-- Modal principal -->
+      <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login</h4>
+              </div>
+
+    <div class="modal-body">
+
+  <!-- Login Modal login -->
+        <section id="login">
+          <div class="modal-dialog modal-sm">
+            <div class="row">
+
+              <div class="col-xs-12">
+                <div class="form-wrap">
+                  <h1>Login com a sua conta de email</h1>
+                    <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="on">
+                      <div class="form-group">
+                          <label for="email" class="sr-only">Email</label>
+                          <input type="email" name="email" id="email" class="form-control" placeholder="alguem@exemplo.com">
+                      </div>
+                    <div class="form-group">
+                        <label for="key" class="sr-only">Senha</label>
+                        <input type="password" name="key" id="key" class="form-control" placeholder="Senha">
+                    </div>
+                    <div class="checkbox">
+                        <span class="character-checkbox" onclick="showPassword()"></span>
+                        <span class="label">Mostrar Senha</span>
+                    </div>
+                    <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
+                  </form>
+                <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Esqueceu a sua senha?</a>
+                <hr> <!-- Linha como quebra de paragrafo -->
+              </div>
+            </div> <!-- /.col-xs-12 -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section>
+
+    <div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+              <span class="sr-only">Fechar</span>
+            </button>
+            <h4 class="modal-title">Recuperar Senha</h4>
+          </div>
+          <div class="modal-body">
+            <p>Digite sua conta de Email</p>
+            <input type="email" name="recovery-email" id="recovery-email" class="form-control" autocomplete="off" placeholder="alguem@exemplo.com">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-custom">Recuperar</button>
+          </div>
+        </div> <!-- /.modal-content -->
+      </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
+
+    <footer id="footer">
+      <div class="modal-dialog modal-md">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Vaga Verde Estacionamento © - 2017</p>
+            <p>Powered by <strong><a href="" target="_blank">Vaga Verde</a></strong></p>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- Fim Login Modal -->
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    </div>
+    </div><!-- Fim Modal  -->
+
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/login.js"></script> <!-- JavaScript login -->
+
+    <!-- Theme JavaScript -->
+    <script src="js/vagaverde.min.js"></script>
+
+</body>
+
+</html>
